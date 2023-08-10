@@ -13,5 +13,11 @@ class MainActivity : AppCompatActivity() {
         login.setOnClickListener {
             Intent(this,LoginActivity::class.java).also { startActivity(it) }
         }
+        val signup:Button= findViewById(R.id.SignUp)
+        signup.setOnClickListener {
+            Intent(this@MainActivity,RegistrationActivity::class.java
+            ).also{startActivity(it)}
+        }
+
     }
 }
